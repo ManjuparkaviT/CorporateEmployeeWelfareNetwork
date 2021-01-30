@@ -43,37 +43,37 @@ public class Employee {
 	}
 	
 	public void ModifyUserDetails(Employee staff) {
-		System.out.println("Do you need to modify your InnovativeThoughts section:y/n");
+		System.out.print("Do you need to modify your InnovativeThoughts section:y/n");
 		if(sc.next().equals("y")) {
 			System.out.print("Enter about your Thoughts:");
 			sc.nextLine();
 			staff.setInnovativeThoughts(sc.nextLine());
 		}
-		System.out.println("Do you need to modify your Events section:y/n");
+		System.out.print("Do you need to modify your Events section:y/n");
 		if(sc.next().equals("y")) {
 			System.out.print("Enter about your Events:");
 			sc.nextLine();
 			staff.setEvents(sc.nextLine());
 		}
-		System.out.println("Do you need to modify your WorkExperience section:y/n");
+		System.out.print("Do you need to modify your WorkExperience section:y/n");
 		if(sc.next().equals("y")) {
 			System.out.print("Enter about your Workexperience:");
 			sc.nextLine();
 			staff.setWorkExperience(sc.nextLine());
 		}
-		System.out.println("Do you need to modify your property section:y/n");
+		System.out.print("Do you need to modify your property section:y/n");
 		if(sc.next().equals("y")) {
 			System.out.print("Enter about your Property:");
 			sc.nextLine();
 			staff.setProperty(sc.nextLine());
 		}
-		System.out.println("Do you need to modify your DOB section:y/n");
+		System.out.print("Do you need to modify your DOB section:y/n");
 		if(sc.next().equals("y")) {
 			System.out.print("Enter your DOB:");
 			sc.nextLine();
 			staff.setDOB(sc.nextLine());
 		}
-		System.out.println("Do you need to modify your EmployeeId:y/n");
+		System.out.print("Do you need to modify your EmployeeId:y/n");
 		if(sc.next().equals("y")) {
 			System.out.print("Enter your EmployeeId:");
 			sc.nextLine();
@@ -82,12 +82,16 @@ public class Employee {
 	}
 	
 	public void ViewUserdetails(ArrayList<ArrayList<String>> userDetails,String EmployeeId) {
+		for(String i:userDetails.get(0)) {
+			System.out.print(i+" ");
+		}
 		for(ArrayList <String> row : userDetails) {
 			if(row.get(5).equals(EmployeeId)) {
 				for(String user:row ) {
 					System.out.print(user+" ");
 			}
 		}
+		System.out.println("");
 		}
 		
 	}

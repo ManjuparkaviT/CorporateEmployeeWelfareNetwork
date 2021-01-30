@@ -11,6 +11,8 @@ public class Main {
 		HashMap<String,String> logins =new HashMap<String,String>();
 	    HashMap<String,String> Welfare=new HashMap<String,String>();
 		ArrayList<ArrayList<String>> userDetails=new ArrayList<ArrayList<String>>();
+		userDetails.add(new ArrayList<String>(Arrays.asList("InnovativeThoughts","Events",
+	    		"WorkExperience","Property","DOB","EmployeeId")));
 		while(true) {
 			
 			System.out.println("Do you want to enter the site(y/n)?");
@@ -44,7 +46,7 @@ public class Main {
 								
 								staff.ModifyUserDetails(staff);
 							    userDetails.add(new ArrayList<String>(Arrays.asList(staff.getInnovativeThoughts(),staff.getEvents(),
-							    		staff.getProperty(),staff.getWorkExperience(),staff.getDOB(),staff.getEmployeeId())));
+							    		staff.getWorkExperience(),staff.getProperty(),staff.getDOB(),EmployeeId)));
 							    
 							}
 							

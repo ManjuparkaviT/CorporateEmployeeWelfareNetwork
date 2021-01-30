@@ -3,7 +3,12 @@ import java.util.*;
 public class Employer {
 	 Scanner sc=new Scanner(System.in);
      public void viewEmployeedetails(ArrayList<ArrayList<String>> UserDetails,HashMap<String,String> Welfare) {
-    	 System.out.println(UserDetails);
+    	 for(ArrayList <String> row : UserDetails) {
+ 			 {
+ 				for(String user:row ) {
+ 					System.out.print(user+" ");
+ 			}System.out.print("\n");
+ 		}
     	 for(String Id:Welfare.keySet()) {
     		 System.out.println(Id);
     		 System.out.print("Do you want approve welfare for this Employee(y/n):");
@@ -15,4 +20,4 @@ public class Employer {
     		 }
     	 }
      }
-}
+}}
